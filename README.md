@@ -13,13 +13,13 @@ Analyzes patient satisfaction with family doctor care in Canada using Statistics
 
 ## Datasets
 **Dataset 1**: Patient satisfaction with family doctors"
-- **Source**: [Statistics Canada CCHS (Canadian Community Health Survey)] (https://open.canada.ca/data/en/dataset/95938131-77e3-4ae9-8fde-9bb024dad418)
+- **Source**: [Statistics Canada CCHS (Canadian Community Health Survey)](https://open.canada.ca/data/en/dataset/95938131-77e3-4ae9-8fde-9bb024dad418)
 - **Table**: 13-10-0495
 - **Coverage**: All Canadian provinces and territories, 2000-present
 - **Variables**: Patient satisfaction by age, sex, geographic region
 
 **Dataset 2**: Physician supply, distribution and migration
-- **Source**: [CIHI (Physician Supply Data), select "Supply, Distribution and Migratio" XLSX] (https://www.cihi.ca/en/physicians )
+- **Source**: [CIHI (Physician Supply Data), select "Supply, Distribution and Migratio" XLSX](https://www.cihi.ca/en/physicians )
 - **Coverage**: All Canadian provinces and territories, 1968-2024
 - **Variables**: Physicians by jurisdiction, specialty, demographic characteristics, geographic distribution, physician migration, practice patterns and employment, gender composition of workforce.
 
