@@ -45,10 +45,14 @@ Tools
 - VS Code or JupyterLab
 
 ## Data Limitations
+
 - Satisfaction is subjective
 - Survey-based data subject to response bias
 - Does not directly measure physician supply or shortage
-- XGBoost model accounts for **physician density and rurality** but **cannot capture systemic factors** that also drive shortages, including:
+
+### XGBoost Model Limitations
+
+The XGBoost model accounts for **physician density and rurality** but **cannot capture systemic factors** that also drive shortages, including:
 
 - Physician burnout and mental health
 - Healthcare funding constraints
@@ -61,6 +65,9 @@ These factors represent important areas for future research and policy considera
 
 
 ## Results on the data: CIHI physician supply analysis
+
+![Results](images/output_ph.png)
+
 #### Critical Findings
 - **Nunavut's 8% access gap exceeds the national average of 0.9% by nearly 9-fold**, indicating a public health crisis requiring urgent intervention.
 - **Despite representing only 0.12% of Canada's population**, Nunavut faces the most severe primary care access deficit. The **2020-2024 decline suggests worsening conditions require immediate policy attention**.
@@ -80,7 +87,6 @@ To address these disparities, the following measures should be implemented:
 - **Telemedicine expansion** to bridge geographic gaps
 - **Infrastructure development** in underserved regions
 - **Healthcare workforce planning** to prevent physician migration from remote areas
-- 
 
 ---
 
@@ -91,13 +97,12 @@ Predicting-Primary-Care-Access-Canada/
 │
 ├── data/
 │   ├── CIHI.ipynb
+│   ├── output_ph.png
 │   └── satisfactory_surveys.ipynb
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   ├── 03_time_series_modeling.ipynb
-│   └── 04_ml_modeling.ipynb
+│   ├── 01_data_exploration_physicians.ipynb
+│   └── 02_data_exploration_satisfaction.ipynb
 │
 ├── README.md
 └── requirements.txt
