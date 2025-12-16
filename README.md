@@ -18,11 +18,6 @@ Analyzes patient satisfaction with family doctor care in Canada using Statistics
 - **Coverage**: All Canadian provinces and territories, 2000-present
 - **Variables**: Patient satisfaction by age, sex, geographic region
 
-**Dataset 2**: Physician supply, distribution and migration
-- **Source**: [CIHI (Physician Supply Data), select "Supply, Distribution and Migratio" XLSX](https://www.cihi.ca/en/physicians )
-- **Coverage**: All Canadian provinces and territories, 1968-2024
-- **Variables**: Physicians by jurisdiction, specialty, demographic characteristics, geographic distribution, physician migration, practice patterns and employment, gender composition of workforce.
-
 Why I chose these datasets:
 - Open and reliable data source
 - Comprehensive metrics and dimensions
@@ -102,7 +97,6 @@ Predicting-Primary-Care-Access-Canada/
 │
 ├── notebooks/
 │   ├── 01_data_exploration_physicians.ipynb
-│   └── 02_data_exploration_satisfaction.ipynb
 │
 ├── README.md
 └── requirements.txt
