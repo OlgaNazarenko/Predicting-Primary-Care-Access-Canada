@@ -12,7 +12,7 @@ Analyzes patient satisfaction with family doctor care in Canada using Statistics
 - Provide quantitative foundatin for predicting family doctor shortage patterns
 
 ## 🗂 Datasets
-**Dataset 1**: Patient satisfaction with family doctors"
+**Dataset**: Patient satisfaction with family doctors"
 - **Source**: [Statistics Canada CCHS (Canadian Community Health Survey)](https://open.canada.ca/data/en/dataset/95938131-77e3-4ae9-8fde-9bb024dad418)
 - **Table**: 13-10-0495
 - **Coverage**: All Canadian provinces and territories, 2000-present
@@ -32,7 +32,6 @@ Languages & Libraries
 - Pandas, NumPy
 - Matplotlib, Seaborn
 - Scikit-learn
-- Statsmodels
 - Jupyter Notebook
 
 Tools
@@ -59,29 +58,53 @@ The XGBoost model accounts for **physician density and rurality** but **cannot c
 These factors represent important areas for future research and policy consideration.
 
 
-## Results on the data: CIHI physician supply analysis
+## Results on the data: CIHI Physician Supply Analysis
 
 ![Results](images/output_ph.png)
 
-#### Critical Findings
+### Critical Findings
+
 - **Nunavut's 8% access gap exceeds the national average of 0.9% by nearly 9-fold**, indicating a public health crisis requiring urgent intervention.
 - **Despite representing only 0.12% of Canada's population**, Nunavut faces the most severe primary care access deficit. The **2020-2024 decline suggests worsening conditions require immediate policy attention**.
+
 ### Geographic Disparities
+
 - Provinces with **60% rural population experience 5-8% without primary care access**
 - Provinces with **<10% rural population maintain <2% access gaps**
 - This reveals that **geographic dispersion is a critical barrier** to healthcare access, independent of total physician supply
 
-#### Physician Density Benchmarks
-- **To achieve <1-2% access gaps:** Country should maintain **at least 110-140 family physicians per 100,000 population**
+### Physician Density Benchmarks
+
+- **To achieve <1-2% access gaps:** Canada should maintain **at least 110-140 family physicians per 100,000 population**
 - **Current status:** Only urban centers and well-resourced provinces meet this standard
+
+### Physician Workforce Stability Crisis
+
+- **Nunavut retention rate: 77-85%** (losing 15-23% annually vs. national 0.04%)
+- **Quebec retention rate: 99.7%** (losing only 0.3% annually)
+- This **3.75 percentage point difference** means Nunavut loses ~31.8% of its physician workforce over 5 years
+
+### Trend Analysis (2020-2024)
+
+- Primary care access gaps remained stable at **0.65%-1.87% from 2020-2023**
+- **Sharp deterioration in 2024: jumped to 3.04% from 0.65%** (a 366% increase in one year)
+- This sudden worsening indicates an **emerging crisis** requiring immediate intervention
+
 ### Recommended Policy Interventions
+
 To address these disparities, the following measures should be implemented:
 
-- **Targeted recruitment programs** for rural and remote physicians
-- **Retention incentives** (housing subsidies, education support, professional development)
-- **Telemedicine expansion** to bridge geographic gaps
-- **Infrastructure development** in underserved regions
-- **Healthcare workforce planning** to prevent physician migration from remote areas
+- **Immediate (0-12 months):** Emergency telemedicine deployment in Nunavut/NWT
+- **Short-term (1-2 years):** Double recruitment incentives and housing subsidies for rural physicians
+- **Long-term (2-5 years):** Restructure training programs to send more graduates to shortage areas
+- **Ongoing:** Infrastructure development in underserved regions
+- **Continuous:** Healthcare workforce planning to prevent physician migration
+
+### Model Performance & Limitations
+
+- **XGBoost model accuracy:** R² = 0.95+ (excellent predictions)
+- **Accounts for:** Physician density and rurality
+- **Cannot capture:** Physician burnout, funding constraints, infrastructure limitations, policy changes
 
 ---
 
@@ -91,16 +114,17 @@ To address these disparities, the following measures should be implemented:
 Predicting-Primary-Care-Access-Canada/
 │
 ├── data/
-│   ├── CIHI.ipynb
-│   ├── output_ph.png
-│   └── satisfactory_surveys.ipynb
+│   └── supply-distribution-migration-physicians-in-canada-2024-data-tables-en.xlsx
 │
 ├── notebooks/
-│   ├── 01_data_exploration_physicians.ipynb
+│   └── 01_data_exploration_physicians.ipynb
 │
+├── images/
+│   └── output_ph.png
+│
+├── .gitignore
 ├── README.md
 └── requirements.txt
-
 
 ```
 ---
